@@ -1,5 +1,9 @@
 import ai
 
+def input_handler(message):
+    if message.find("games") != -1:
+        return 
+        
 name = input("Enter a username: ")
 print ("Hello, " + name)
 print ("")
