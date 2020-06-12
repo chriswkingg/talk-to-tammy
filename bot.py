@@ -2,6 +2,7 @@
 
 import os 
 import discord
+import message_handler
 
 from dotenv import load_dotenv
 
@@ -19,15 +20,14 @@ async def on_message(message):
     # Sets vars for convience
     author = message.author
     channel = message.channel
-    server = channel.server
     message_string = message.content.lower()
     if author == client.user:
         # Don't let the bot talk to itself... it might become self-aware.
         return
-    elif message_string.find("$hi") != -1:
-        await message.channel.send("Hi")
-
+    
+    await message.channel.send(message_handler.input_handler(message_string))
+   
 
 client.run(TOKEN)
 
-channel = discord.TextChannel()
+
