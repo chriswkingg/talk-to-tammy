@@ -3,7 +3,7 @@
 import os 
 import discord
 import message_handler
-
+from discord.ext import commands
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -24,9 +24,12 @@ async def on_message(message):
     if author == client.user:
         return
     if message_string[0] == '$':
-        message_string = message_string.replace('$', '') #Removes the $ when sending to message handler
-        await message.channel.send(message_handler.input_handler(message_string))
-    
+        
+        await message_handler.input_handler(message)
+        
+
+
+
 
 client.run(TOKEN)
 
