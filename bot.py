@@ -16,7 +16,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content.find("$test") != -1:
+    if message.content.find("$hi") != -1:
         await message.channel.send("Hi")
 
 
