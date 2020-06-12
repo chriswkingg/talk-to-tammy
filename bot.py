@@ -16,7 +16,14 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content.find("$hi") != -1:
+    author = message.author
+    channel = message.channel
+    server = channel.server
+    message_string = message.content.lower()
+    if author == client.user:
+        # Don't let the bot talk to itself... it might become self-aware.
+        return
+    elif message_string.find("$hi") != -1:
         await message.channel.send("Hi")
 
 
