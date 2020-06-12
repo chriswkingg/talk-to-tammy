@@ -3,6 +3,7 @@
 import os 
 import discord
 import message_handler
+import games
 
 from dotenv import load_dotenv
 
