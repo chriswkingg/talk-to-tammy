@@ -22,11 +22,11 @@ async def on_message(message):
     channel = message.channel
     message_string = message.content.lower()
     if author == client.user:
-        # Don't let the bot talk to itself... it might become self-aware.
         return
+    if message_string[0] == '$':
+        message_string = message_string.replace('$', '') #Removes the $ when sending to message handler
+        await message.channel.send(message_handler.input_handler(message_string))
     
-    await message.channel.send(message_handler.input_handler(message_string))
-   
 
 client.run(TOKEN)
 
