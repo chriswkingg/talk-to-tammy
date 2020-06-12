@@ -16,6 +16,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
+    # Sets vars for convience
     author = message.author
     channel = message.channel
     server = channel.server
