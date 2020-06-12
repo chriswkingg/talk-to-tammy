@@ -2,7 +2,7 @@
 import os 
 import discord
 import datetime
-
+x=datetime.datetime.now()
 
 from dotenv import load_dotenv
 
@@ -18,7 +18,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.content.find("$whatisthedate") != -1:
-        await message.channel.send(datetime.datetime.now())
+        await message.channel.send(x.strftime("%Y"))
 
 
 client.run(TOKEN)
