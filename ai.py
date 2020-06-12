@@ -7,7 +7,7 @@ pairs = [
     ],
      [
         r"what is your name ?",
-        ["My name is Chatty and I'm a chatbot ?",]
+        ["My name is Tammy and I'm a chatbot?",]
     ],
     [
         r"how are you ?",
@@ -19,11 +19,11 @@ pairs = [
     ],
     [
         r"i'm (.*) doing good",
-        ["Nice to hear that","Alright :)",]
+        ["Nice to hear that","Alright :)", "I'm glad to hear that!", "Thats good!",]
     ],
     [
         r"hi|hey|hello",
-        ["Hello", "Hey there",]
+        ["Hello", "Hey there", "What's up?",]
     ],
     [
         r"(.*) age?",
@@ -41,7 +41,7 @@ pairs = [
     ],
     [
         r"(.*) (location|city) ?",
-        ['Chennai, Tamil Nadu',]
+        ['Ontario, Canada',]
     ],
     [
         r"how is weather in (.*)?",
@@ -72,8 +72,8 @@ pairs = [
         ["Brad Pitt"]
 ],
     [
-        r"bye",
-        ["BBye take care. See you soon :) ","It was nice talking to you. See you soon :)"]
+        r"bye|cya|(.*) (leave)",
+        ["Bye take care. See you soon :) ","It was nice talking to you. See you soon :)"]
 ],
 ]
 
