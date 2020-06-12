@@ -12,6 +12,9 @@ def input_handler(message):
     elif message.find("$whatisthetime") != -1:
         return datetime.datetime.now().strftime("The time is: %I:%M %p")
 
+    elif message.find("$bye") != -1:
+        return "See you later"
+
 
 
 
