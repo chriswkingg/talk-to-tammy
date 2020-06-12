@@ -14,10 +14,7 @@ def input_handler(message):
 
     elif message.find("bye") != -1:
         return "See you later"
-
-
-
-
-
-
-
+    
+    else:
+        response = ai.chatBotResponse(message)
+        return response if response else "Tammy doesn't know what you said! \n My devs are too dumb to teach me more things :("
