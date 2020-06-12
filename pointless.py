@@ -18,7 +18,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.content.find("$whatisthedate") != -1:
-        await message.channel.send(x.strftime("%Y"))
+        await message.channel.send(x.strftime("%B" "%Y"))
 
 
 client.run(TOKEN)
