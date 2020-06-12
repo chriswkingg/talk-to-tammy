@@ -24,13 +24,6 @@ async def on_message(message):
     if author == client.user:
         return
     if message_string[0] == '$':
-        
         await message_handler.input_handler(message)
-        
-
-
-
 
 client.run(TOKEN)
-
-
