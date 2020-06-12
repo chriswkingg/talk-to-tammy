@@ -14,4 +14,12 @@ client = discord.Client()
 async def on_ready():
     print(f'{client.user} has connected to Discord!')
 
+@client.event
+async def on_message(message):
+    if message.content.find("$test") != -1:
+        await message.channel.send("Hi")
+
+
 client.run(TOKEN)
+
+channel = discord.TextChannel()
