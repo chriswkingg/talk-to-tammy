@@ -4,6 +4,9 @@ import nltk
 import nltk.corpus
 
 pairs = [
+    [r"who (.*) favorite developer ?",
+        ['Daniel is obviously the best developer', 'Rohan should pursue business instead']
+    ],
     [
         r"what (.*) animal ?",
         ['Monkeys, they are like little people',]
@@ -26,7 +29,9 @@ pairs = [
     ],
     [
         r"(.*) sing ?",
-        ['Da da daaaa da bing bong boom boom pat bumbum bum bum splash',]
+        ['Da da daaaa da bing bong boom boom pat bumbum bum bum splash',
+        'spash, now that you know how my ice be',
+        'never gonna give you up',]
     ],
     [
         r"what (.*) (five|5) ?",
