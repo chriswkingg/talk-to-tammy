@@ -36,6 +36,6 @@ async def input_handler(message):
         response = "tts disabled"
     else:
         response = ai.chatBotResponse(message_string)
-        response = response if response else "Tammy doesn't know what you said! \nMy devs are too dumb to teach me more things :("
+        response = response if response else "Tammy doesn't know what you said! \nI shat myself"
     
     await message.channel.send(response, tts=tts_enabled)
