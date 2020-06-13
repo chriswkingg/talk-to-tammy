@@ -3,7 +3,8 @@
 import os 
 import discord
 import message_handler
-from discord.ext import commands
+#import games
+
 from dotenv import load_dotenv
 
 load_dotenv()
