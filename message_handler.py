@@ -20,7 +20,10 @@ async def input_handler(message):
     elif message_string.find("google") != -1:
         quer = message_string.split(' ',2)[1]
         response = google_search.search(quer)
-
+    
+    elif message_string.find("what can you do") != -1:
+        response = "My commands can be found on my website! "
+        
     elif message_string.find("join") != -1:
         try:
             response = "Joining VC"
