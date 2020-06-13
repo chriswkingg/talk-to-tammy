@@ -2,6 +2,7 @@ import datetime
 import discord
 import ai
 import google_search
+import wiki_search
 tts_enabled = False
 
 async def input_handler(message):
@@ -18,8 +19,18 @@ async def input_handler(message):
         response = datetime.datetime.now().strftime("The time is: %I:%M %p")
 
     elif message_string.find("google") != -1:
-        quer = message_string.split(' ',2)[1]
+        quer = message_string.split(' ',1)[1]
         response = google_search.search(quer)
+
+    elif message_string.find("wiki") != -1:
+        quer = message_string.split(' ',2)[2]
+        search_type = message_string.split(' ')[1]
+        print(quer + " " + search_type)
+        if search_type == 'title':
+            response = wiki_search.findTitles(quer)
+        elif search_type == 'summary':
+            response = wiki_search.articleSummary(quer)
+        
     
     elif message_string.find("what can you do") != -1:
         response = "My commands can be found on my website! "
