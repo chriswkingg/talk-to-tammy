@@ -2,6 +2,7 @@
 
 Talk to Tammy can understand and respond to the following questions and responses, try it out for yourself! 
 
+Use $ before commands
 1) My name is____
 2) How are you?
 3) Sorry
@@ -34,5 +35,6 @@ Talk to Tammy can understand and respond to the following questions and response
 30) Google_____
 31) Wiki summery 
 32) Wiki tittle 
-33)Lookup ____
-34) Bye/Cya/ Im going to leave.
+33) Lookup ____
+34) Translate ______ (output language)
+35) Bye/Cya/ Im going to leave.
