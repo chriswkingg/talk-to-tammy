@@ -25,6 +25,10 @@ pairs = [
         ["Its alright","Its OK, never mind",]
     ],
     [
+        r"what favourite (.*) (meal|snack|food) ?",
+        ['Pizza with Ice cream :yum:',]
+    ],
+    [
         r"i'm (.*) doing good",
         ["Nice to hear that","Alright :)", "I'm glad to hear that!", "Thats good!",]
     ],
