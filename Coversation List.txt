@@ -37,3 +37,32 @@ Talk to Tammy can understand and respond to the following questions and response
 33) Lookup ____
 34) Parrot
 35) Bye/Cya/ Im going to leave.
+36) What did you do yesterday?
+37) What did the Fox say?
+38) When will the world end?
+39) Can you make me a sandwich?
+40) How much wood could a woodchuck chuck if a woodchuck could chuck wood?
+41) What is the best cellphone?
+42) Do you have a partner?
+43) Do you have any pets?
+44) Ok google
+45) Tell me a joke
+
+To add Tammy to a voice server: $join
+
+To enable Talk-speech: $tts true
+To disable talk-speech: $tts false 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
