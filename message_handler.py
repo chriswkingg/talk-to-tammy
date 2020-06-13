@@ -1,9 +1,10 @@
 import datetime
 import discord
 import ai
-import bot
+tts_enabled = False
 
 async def input_handler(message):
+    global tts_enabled
     author = message.author
     channel = message.channel
     voicechannel = author.voice.channel
@@ -28,13 +29,13 @@ async def input_handler(message):
         except AttributeError:
             response = "Error: Not connected to a voice channel"
     elif message_string.find("tts true") != -1:
-        bot.tts_enabled = True
+        tts_enabled = True
         response = "tts enabled"
     elif message_string.find("tts false") != -1:
-        bot.tts_enabled = False
+        tts_enabled = False
         response = "tts disabled"
     else:
         response = ai.chatBotResponse(message_string)
         response = response if response else "Tammy doesn't know what you said! \nMy devs are too dumb to teach me more things :("
     
-    await message.channel.send(response, tts=bot.tts_enabled)
+    await message.channel.send(response, tts=tts_enabled)

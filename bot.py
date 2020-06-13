@@ -10,7 +10,6 @@ load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 
 client = discord.Client()
-tts_enabled = False
 
 @client.event
 async def on_ready():
