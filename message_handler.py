@@ -29,8 +29,10 @@ async def input_handler(message):
         response = google_search.search(quer)
 
     elif message_string.find("translate") != -1:
-        quer = message_string.split(' ',1)[1]
-        response = translator.translate(quer)
+        lang = message_string.split(' ')[1]
+        msg = message_string.split(' ',2)[2]
+        res = translator.translate(lang, msg)
+        response = res.lower()
 
     elif message_string.find("wiki") != -1:
         quer = message_string.split(' ',2)[2]

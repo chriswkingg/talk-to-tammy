@@ -2,7 +2,10 @@ from googletrans import Translator
 translator = Translator()
 
 def translate(language, message):
-    Dict = dict ({'Arabic'	'ar', 'Bengali' : 'bn', 'Chinese' : 'zh', 'Croatian' : 'hr', 'Czech' : 'cs', 'Danish' : 'da', 'Dutch' : 'nl', 'English' : 'en', 'French' : 'fr','German' : 'de', 'Greek':'el', 'Hindi':'hi', 'Icelandic':'is', 'Indonesian':'id', 'Irish':'ga', 'Italian':'it', 'Japanese':'ja', 'Korean':'ko', 'Kurdish':'ku', 'Latin':'la', 'Latvian':'lv', 'Lithuanian':'lt', 'Mongolian':'mn', 'Persian':'fa', 'Polish':'pl', 'Portuguese':'pt', 'Punjabi':'pa', 'Romanian':'ro', 'Russian':'ru', 'Spanish':'es', 'Turkish':'tr', 'Ukrainian':'uk', 'Vietnamese':'vi', 'Zulu':'zu' })
-    dict.get(language)
-    outmessage = translator.translate(message, dest=language)
-    return outmessage.text
+    try: 
+        thisdict = {'arabic':'ar', 'bengali' : 'bn', 'chinese' : 'zh-CN', 'croatian' : 'hr', 'czech' : 'cs', 'danish' : 'da', 'dutch' : 'nl', 'english' : 'en', 'french' : 'fr','german' : 'de', 'greek':'el', 'hindi':'hi', 'icelandic':'is', 'indonesian':'id', 'irish':'ga', 'italian':'it', 'japanese':'ja', 'korean':'ko', 'kurdish':'ku', 'latin':'la', 'latvian':'lv', 'lithuanian':'lt', 'mongolian':'mn', 'persian':'fa', 'polish':'pl', 'portuguese':'pt', 'punjabi':'pa', 'romanian':'ro', 'russian':'ru', 'spanish':'es', 'turkish':'tr', 'ukrainian':'uk', 'vietnamese':'vi', 'zulu':'zu' }
+        language=thisdict[language]
+        outmessage = translator.translate(message, dest=language)
+        return outmessage.text
+    except KeyError:
+        return "Language might be mispelled!"
