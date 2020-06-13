@@ -31,4 +31,5 @@ Talk to Tammy can understand and respond to the following questions and response
 27) What are you scared/ afraid of?/ What is your fear?
 28) What do you want for a meal/ snack/ food?
 29) Who is your favorite developer?
-30)Bye/Cya/ Im going to leave.
+30) Google_____
+31) Bye/Cya/ Im going to leave.
