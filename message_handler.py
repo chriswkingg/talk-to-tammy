@@ -3,7 +3,7 @@ import discord
 import ai
 import google_search
 import wiki_search
-import dictionary
+import Dictionary
 tts_enabled = False
 
 async def input_handler(message):
@@ -21,7 +21,7 @@ async def input_handler(message):
 
     elif message_string.find("lookup") != -1:
         quer = message_string.split(' ',1)[1]
-        response = dictionary.dict_look_up(quer)
+        response = Dictionary.dict_look_up(quer)
 
     elif message_string.find("google") != -1:
         quer = message_string.split(' ',1)[1]
