@@ -19,6 +19,10 @@ async def input_handler(message):
 
     elif message_string.find("whatisthetime") != -1:
         response = datetime.datetime.now().strftime("The time is: %I:%M %p")
+    
+    elif message_string.find("parrot") != -1:
+        res = message_string.split(' ',1)[1]
+        response = res
 
     elif message_string.find("lookup") != -1:
         quer = message_string.split(' ',1)[1]
