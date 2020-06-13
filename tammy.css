@@ -71,6 +71,22 @@ ul {
 }
 
 
+.image3 {
+    width:20vw;
+    height:15vw;
+    margin-left:10vw;
+    margin-top: 5vw;
+  
+}
+
+.image4 {
+    width:20vw;
+    height:15vw;
+    margin-left: 35vw;
+    margin-top: 5vw;
+}
+
+
 
 /*box*/
 
@@ -102,7 +118,7 @@ ul {
   width: 2vw;
   height: 2vw;
   float: right;
-  margin-right: 63vw;
+  margin-right: 60vw;
 }
 
 .switch:hover {
@@ -116,6 +132,12 @@ ul {
 .text {
   float: left;
 }
+
+
+
+
+
+
 
 
 
