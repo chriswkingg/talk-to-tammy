@@ -13,6 +13,10 @@ pairs = [
         ["My name is Tammy and I'm a chatbot?",]
     ],
     [
+        r"what favourite (.*) (meal|snack|food) ?",
+        ['Pizza with Ice cream :yum:',]
+    ],
+    [
         r"how are you ?",
         ["I'm doing good\nHow about You ?",]
     ],
