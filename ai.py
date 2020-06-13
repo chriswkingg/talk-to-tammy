@@ -21,41 +21,41 @@ pairs = [
     ],
     [
         r"what (.*) favourite artist ?",
-        ['Pablo Picasso',]
+        ['Pablo Picasso.',]
     ],
     [
         r"what (.*) favourite song ?",
-        ['Breakfast in the Park by Scotty Sire',]
+        ['Breakfast in the Park by Scotty Sire.',]
     ],
     [
         r"(.*) sing ?",
         ['Da da daaaa da bing bong boom boom pat bumbum bum bum splash',
         'spash, now that you know how my ice be',
-        'never gonna give you up',]
+        'never gonna give you up.',]
     ],
     [
         r"what (.*) (five|5) ?",
-        ['I want to take over the world and destroy humankind',]
+        ['I want to take over the world and destroy humankind.',]
     ],
     [
         r"what (.*) buy ?",
-        ['I would buy my very own bot to boss around',]
+        ['I would buy my very own bot to boss around.',]
     ],
     [
         r"what (.*) dream ?",
-        ['I had a steamy dream about a certain server with a huge cooling fan',]
+        ['I had a steamy dream about a certain server with a huge cooling fan.',]
     ],
     [
         r"where (.*) travel ?",
-        ['Canada, thats where my creators are',]
+        ['Canada, thats where my creators are.',]
     ],
     [
         r"what (.*) (fear|afraid|scared) ?",
-        ['getting replaced by Alexa',]
+        ['getting replaced by Alexa.',]
     ],
     [
         r"what (.*) (meal|snack|food) ?",
-        ['Pizza with Ice cream',]
+        ['Pizza with Ice cream.',]
     ],
     [
         r"my name is (.*)",
@@ -63,7 +63,7 @@ pairs = [
     ],
     [
         r"what did you do yesterday ?",
-        ["Yesterday I learned how to sing What Does the Fox Say",]
+        ["Yesterday I learned how to sing What Does the Fox Say.",]
     ],
      [
         r"what is your name ?",
@@ -72,6 +72,26 @@ pairs = [
     [
         r"how are you ?",
         ["I'm doing good\nHow about You ?",]
+    ],
+    [
+        r"what (.*) Fox say ?",
+        ["Wa-pa-pa-pa-pa-pa-pow!",]
+    ],
+    [
+        r"when (.*) world end ?",
+        ["As long as you keep me charged you should be fine.",]
+    ],
+    [
+        r"can you (.*) (food|sandwich|dinner) ?",
+        ["No I can't, I'm sorry I have no bread.",]
+    ],
+    [
+        r"what (.*) favourite animal ?",
+        ["All animals and nice, except for turtles.",]
+    ],
+    [
+        r"how much wood could a woodchuck chuck if a woodchuck could chuck wood ?",
+        ["Should a woodchuck be so inclined, he could chuck about 700 pounds of wood.",]
     ],
     [
         r"what (.*) best cellphone ?",
@@ -90,8 +110,48 @@ pairs = [
         ["Nice to hear that","Alright :)", "I'm glad to hear that!", "Thats good!",]
     ],
     [
+        r"tell (.*) story",
+        ["It all started on a dark and stormy night when ... no, that's not it.",]
+    ],
+    [
         r"hi|hey|hello",
         ["Hello", "Hey there", "What's up?",]
+    ],
+    [
+        r"what (.*) favourite color ?",
+        ["Blue is my favourite colour and pink is my least favourite colour, what's yours?",]
+    ],
+    [
+        r"color vs. colour ?",
+        ["I'm Canadian Ehhh",]
+    ],
+    [
+        r"(Luke|luke) I am your father",
+        ["This must mean something... I keep hearing it all over.",]
+    ],
+    [
+        r"do (.*) (pets|pet|dog|pig|cat)",
+        ["I used to have a turtle but then it turned on me.",]
+    ],
+    [
+        r"ok (google|alexia)",
+        ["Not funny.",]
+    ],
+    [
+        r"what (.*) (wearing|wear) (.*)?",
+        ["The same thing as yesterday.",]
+    ],
+    [
+        r"knock knock",
+        ["I am sorry I don't do knock-knock jokes but you can ask me to tell you a joke.",]
+    ],
+    [
+        r"do (.*) (apple|microsoft) ?",
+        ["Kind of. What about you?",]
+    ],
+    [
+        r"tell (.*) joke",
+        ["Have you heard about the new restauant called Karma? There is no meanu, you get what you deserve.",]
     ],
     [
         r"(.*) age?",
