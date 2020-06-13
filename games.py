@@ -6,18 +6,22 @@ async def playGame(message):
   author = message.author
   channel = message.channel
   voicechannel = author.voice.channel
-  name = 'Bob'
+  name = author.name
   await message.channel.send("Hello, " + name)
   await message.channel.send("1. Play word jumble")
   await message.channel.send("2. Play the monster game")
   await message.channel.send("3. Exit/Quit ")
   await message.channel.send("What would you like to do? ")
 
-
+  
   while True:
     answer=message.content.lower().replace('$', '')
-
+    #print(answer)
+    
+    
     if answer=="1": 
+      
+      await message.channel.send(answer)
       WORDS = ("python", "jumble", "easy", "difficult", "answer",  "xylophone" ,"different", "language", "mammal", "dessert", "stomach",  "probably", "neither", "numeral", "million", "message", "except", "laughter", "inventor", "journey", "bake", "must", "fried", "rip", "sea", "chase", "bee", "seven", "counting", "write", "steer", "tenth", "they", "fight", "birthday")
       word = random.choice(WORDS)
       correct = word

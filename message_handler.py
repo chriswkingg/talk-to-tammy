@@ -12,7 +12,7 @@ async def input_handler(message):
     if message_string.find("whatisthedate") != -1:
         await message.channel.send(datetime.datetime.now().strftime("%B " "%Y"))
     elif message_string.find("hi") != -1:
-        await message.channel.send("Hi")
+        await message.channel.send("Hi " + author.name)
     elif message_string.find("whatisthetime") != -1:
         await message.channel.send(datetime.datetime.now().strftime("The time is: %I:%M %p"))
     elif message_string.find("games") != -1:
