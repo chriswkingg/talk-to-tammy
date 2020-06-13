@@ -1,0 +1,33 @@
+# Bot Conversations Tools
+
+Talk to Tammy can understand and respond to the following questions and responses, try it out for yourself! 
+
+1) My name is____
+2) How are you?
+3) Sorry
+4) I'm doing good
+5) Hi/ Hey/ Hello
+6) What is your age?
+7) What do you want?
+8) How were you created?
+9) Where are you from?/ Whats is your location/ city?
+10) Hows the weather in ___?
+11) I work in ___?
+12) Is it raining in ___?
+13) How is your health Tammy?
+14) What is your favourite sport/ game?
+15) Who is your favourite sportsperson?
+16) Who is your favourite moviestar/ actor?
+17) What is your favourite animal?
+18) What language can you speak?
+19) What is your favourite TV show/ movie?
+20) What is your favourite artist?
+21) What is your favourite song?
+22) Can you sing for me?
+23) What do you want in 5/ five years?
+24) What should I buy?
+25) What is your dream?
+26) Where do you want to travel?
+27) What are you scared/ afraid of?/ What is your fear?
+28) What do you want for a meal/ snack/ food?
+29) Bye/Cya/ Im going to leave.
