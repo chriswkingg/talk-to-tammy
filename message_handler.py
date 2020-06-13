@@ -1,6 +1,7 @@
 import datetime
 import discord
 import ai
+import google_search
 tts_enabled = False
 
 async def input_handler(message):
@@ -14,6 +15,9 @@ async def input_handler(message):
         response = datetime.datetime.now().strftime("%B " "%Y")
     elif message_string.find("whatisthetime") != -1:
         response = datetime.datetime.now().strftime("The time is: %I:%M %p")
+    elif message_string.find("google") != -1:
+        quer = message_string.split(' ',2)[1]
+        response = google_search.search(quer)
     elif message_string.find("join") != -1:
         try:
             response = "Joining VC"
