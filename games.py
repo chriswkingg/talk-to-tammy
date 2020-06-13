@@ -22,6 +22,27 @@ async def playGame(message):
     
     if answer=="1": 
       
+      await message.channel.send(answer)
+      WORDS = ("python", "jumble", "easy", "difficult", "answer",  "xylophone" ,"different", "language", "mammal", "dessert", "stomach",  "probably", "neither", "numeral", "million", "message", "except", "laughter", "inventor", "journey", "bake", "must", "fried", "rip", "sea", "chase", "bee", "seven", "counting", "write", "steer", "tenth", "they", "fight", "birthday")
+      word = random.choice(WORDS)
+      correct = word
+      jumble = ""
+      while word:
+        position = random.randrange(len(word))
+        jumble += word[position]
+        word = word[:position] + word[(position + 1):]
+        await message.channel.send("Welcome to WORD JUMBLE!!! Unscramble the leters to make a word.")
+        await message.channel.send("The jumble is:", jumble)
+        guess = input("Your guess: ")
+      while guess != correct and guess != "":
+          await message.channel.send("")
+          await message.channel.send("Sorry, that's not it")
+          guess = input("Your guess: ")
+      if guess == correct:
+          await message.channel.send("")
+          await message.channel.send("That's it, you guessed it!\n")
+      await message.channel.send("Thanks for playing")
+      await message.channel.send("")
         
     elif answer=="2": 
       await message.channel.send("Monster Game")
