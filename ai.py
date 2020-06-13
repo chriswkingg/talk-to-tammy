@@ -1,6 +1,57 @@
 from nltk.chat.util import Chat, reflections
+import os
+import nltk
+import nltk.corpus
 
 pairs = [
+    [
+        r"what (.*) animal ?",
+        ['Monkeys, they are like little people',]
+    ],
+    [
+        r"what (.*) language ?",
+        ['I am fluent in Python but Im learning English',]
+    ],
+    [
+        r"what (.*) (TV|show) ?",
+        ['Person of Interest',]
+    ],
+    [
+        r"what (.*) favourite artist ?",
+        ['Pablo Picasso',]
+    ],
+    [
+        r"what (.*) favourite song ?",
+        ['Breakfast in the Park by Scotty Sire',]
+    ],
+    [
+        r"(.*) sing ?",
+        ['Da da daaaa da bing bong boom boom pat bumbum bum bum splash',]
+    ],
+    [
+        r"what (.*) (five|5) ?",
+        ['I want to take over the world and destroy humankind',]
+    ],
+    [
+        r"what (.*) buy ?",
+        ['I would by my very own bot to boss around',]
+    ],
+    [
+        r"what (.*) dream ?",
+        ['I had a steamy dream about a certain server with a huge cooling fan',]
+    ],
+    [
+        r"where (.*) travel ?",
+        ['Canada, thats where my creators are',]
+    ],
+    [
+        r"what (.*) (fear|afraid|scared) ?",
+        ['getting replaced by Alexa',]
+    ],
+    [
+        r"what (.*) (meal|snack|food) ?",
+        ['Pizza with Ice cream',]
+    ],
     [
         r"my name is (.*)",
         ["Hello %1, How are you today ?",]
@@ -40,7 +91,7 @@ pairs = [
         ["Chris, Rohan, Daniel, and Lauren created me using Python's NLTK library ","top secret ;)",]
     ],
     [
-        r"(.*) (location|city) ?",
+        r"(.*) (location|city|from) ?",
         ['Ontario, Canada',]
     ],
     [
