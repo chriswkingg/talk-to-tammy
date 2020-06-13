@@ -2,7 +2,8 @@
 
 import os 
 import discord
-
+import message_handler
+from discord.ext import commands
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -16,10 +17,13 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content.find("$hi") != -1:
-        await message.channel.send("Hi")
-
+    # Sets vars for convience
+    author = message.author
+    channel = message.channel
+    message_string = message.content.lower()
+    if author == client.user:
+        return
+    if message_string[0] == '$':
+        await message_handler.input_handler(message)
 
 client.run(TOKEN)
-
-channel = discord.TextChannel()
