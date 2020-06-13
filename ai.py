@@ -4,7 +4,7 @@ import nltk
 import nltk.corpus
 
 pairs = [
-    [r"who (.*) favorite developer ?",
+    [r"who (.*) favourite developer ?",
         ['Rohan is obviously the best developer', 'Daniel might as well be my son ']
     ],
     [
