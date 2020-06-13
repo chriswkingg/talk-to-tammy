@@ -30,11 +30,14 @@ async def input_handler(message):
     elif message_string.find("wiki") != -1:
         quer = message_string.split(' ',2)[2]
         search_type = message_string.split(' ')[1]
-        print(quer + " " + search_type)
         if search_type == 'title':
             response = wiki_search.findTitles(quer)
         elif search_type == 'summary':
             response = wiki_search.articleSummary(quer)
+        elif search_type == 'link':
+            response = wiki_search.getLink(quer)
+        else:
+            response = "invalid command, please check my commands"
         
     
     elif message_string.find("what can you do") != -1:
