@@ -5,6 +5,10 @@ import nltk.corpus
 
 pairs = [
     [
+        r"what (.*) animal ?",
+        ['Monkeys, they are like little people',]
+    ],
+    [
         r"what (.*) language ?",
         ['I am fluent in Python but Im learning English',]
     ],
