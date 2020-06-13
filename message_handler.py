@@ -1,18 +1,22 @@
 import datetime
 import discord
 import ai
+import games
 
 async def input_handler(message):
     author = message.author
     channel = message.channel
     voicechannel = author.voice.channel
     message_string = message.content.lower().replace('$', '') #Removes the $ when sending to message handler
+
     if message_string.find("whatisthedate") != -1:
         await message.channel.send(datetime.datetime.now().strftime("%B " "%Y"))
     elif message_string.find("hi") != -1:
         await message.channel.send("Hi")
     elif message_string.find("whatisthetime") != -1:
         await message.channel.send(datetime.datetime.now().strftime("The time is: %I:%M %p"))
+    elif message_string.find("games") != -1:
+        await games.playGame(message)
     elif message_string.find("join") != -1:
         try:
             await message.channel.send("Joining VC")
