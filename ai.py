@@ -5,6 +5,10 @@ import nltk.corpus
 
 pairs = [
     [
+        r"what (.*) (meal|snack|food) ?",
+        ['Pizza with Ice cream :yum:',]
+    ],
+    [
         r"my name is (.*)",
         ["Hello %1, How are you today ?",]
     ],
