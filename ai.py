@@ -5,7 +5,7 @@ import nltk.corpus
 
 pairs = [
     [r"who (.*) favorite developer ?",
-        ['Rohan is obviously the best developer', 'ANYONE BUT DANIEL!!!! ']
+        ['Rohan is obviously the best developer', 'Daniel might as well be my son ']
     ],
     [
         r"what (.*) animal ?",
@@ -39,7 +39,7 @@ pairs = [
     ],
     [
         r"what (.*) buy ?",
-        ['I would by my very own bot to boss around',]
+        ['I would buy my very own bot to boss around',]
     ],
     [
         r"what (.*) dream ?",
