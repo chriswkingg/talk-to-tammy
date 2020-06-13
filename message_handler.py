@@ -1,19 +1,11 @@
 import datetime
 import discord
 import ai
-<<<<<<< HEAD
 import google_search
 import wiki_search
 import Dictionary
 import translator
 tts_enabled = False
-=======
-<<<<<<< HEAD
-import bot
-=======
-import games
->>>>>>> Lauren
->>>>>>> dialogFlow
 
 async def input_handler(message):
     global tts_enabled
@@ -21,14 +13,12 @@ async def input_handler(message):
     channel = message.channel
     voicechannel = author.voice.channel
     message_string = message.content.lower().replace('$', '') #Removes the $ when sending to message handler
-<<<<<<< HEAD
     response = ""
     if message_string.find("whatisthedate") != -1:
         response = datetime.datetime.now().strftime("%B " "%Y")
 
     elif message_string.find("whatisthetime") != -1:
         response = datetime.datetime.now().strftime("The time is: %I:%M %p")
-<<<<<<< HEAD
 
     elif message_string.find("lookup") != -1:
         quer = message_string.split(' ',1)[1]
@@ -60,19 +50,6 @@ async def input_handler(message):
     elif message_string.find("what can you do") != -1:
         response = "My commands can be found on my website! "
         
-=======
-=======
-
-    if message_string.find("whatisthedate") != -1:
-        await message.channel.send(datetime.datetime.now().strftime("%B " "%Y"))
-    elif message_string.find("hi") != -1:
-        await message.channel.send("Hi " + author.name)
-    elif message_string.find("whatisthetime") != -1:
-        await message.channel.send(datetime.datetime.now().strftime("The time is: %I:%M %p"))
-    elif message_string.find("games") != -1:
-        await games.playGame(message)
->>>>>>> Lauren
->>>>>>> dialogFlow
     elif message_string.find("join") != -1:
         try:
             response = "Joining VC"
