@@ -4,6 +4,7 @@ import ai
 import google_search
 import wiki_search
 import Dictionary
+import translator
 tts_enabled = False
 
 async def input_handler(message):
@@ -26,6 +27,10 @@ async def input_handler(message):
     elif message_string.find("google") != -1:
         quer = message_string.split(' ',1)[1]
         response = google_search.search(quer)
+
+    elif message_string.find("translate") != -1:
+        quer = message_string.split(' ',1)[1]
+        response = translator.translate(quer)
 
     elif message_string.find("wiki") != -1:
         quer = message_string.split(' ',2)[2]

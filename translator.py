@@ -1,5 +1,5 @@
 from googletrans import Translator
-
-def translate(language, message):
-    outmessage = Translator.translate(message, dest='en')
-    print (outmessage.text)
+translator = Translator()
+def translate(message):
+    outmessage = translator.translate(message, dest='en')
+    return outmessage.text
