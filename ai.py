@@ -61,6 +61,10 @@ pairs = [
         r"my name is (.*)",
         ["Hello %1, How are you today ?",]
     ],
+    [
+        r"what did you do yesterday ?",
+        ["Yesterday I learned how to sing What Does the Fox Say",]
+    ],
      [
         r"what is your name ?",
         ["My name is Tammy and I'm a chatbot?",]
@@ -68,6 +72,14 @@ pairs = [
     [
         r"how are you ?",
         ["I'm doing good\nHow about You ?",]
+    ],
+    [
+        r"what (.*) best cellphone ?",
+        ["Wait, there are other kinds of phones?",]
+    ],
+    [
+        r"do you have a (boyfriend|girlfriend|partner) ?",
+        ["Why? So I can have the best time of my life filled with free gifts and ice cream and have it end in heartbreak and lonelness. Sure, where do I sign up?",]
     ],
     [
         r"sorry (.*)",
