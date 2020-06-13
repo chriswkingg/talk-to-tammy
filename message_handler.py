@@ -1,6 +1,7 @@
 import datetime
 import discord
 import ai
+import games
 tts_enabled = False
 
 async def input_handler(message):

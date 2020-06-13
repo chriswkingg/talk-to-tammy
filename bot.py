@@ -24,7 +24,10 @@ async def on_message(message):
     message_string = message.content.lower()
     if author == client.user:
         return
-    if message_string[0] == '$':
+    if message_string == "$games":
+        await games.init_games(client, message)
+    elif message_string[0] == '$' and games.game_enabled == False:
         await message_handler.input_handler(message)
+    
 
 client.run(TOKEN)
