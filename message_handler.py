@@ -1,18 +1,34 @@
 import datetime
 import discord
 import ai
+<<<<<<< HEAD
 import bot
+=======
+import games
+>>>>>>> Lauren
 
 async def input_handler(message):
     author = message.author
     channel = message.channel
     voicechannel = author.voice.channel
     message_string = message.content.lower().replace('$', '') #Removes the $ when sending to message handler
+<<<<<<< HEAD
     response = ""
     if message_string.find("whatisthedate") != -1:
         response = datetime.datetime.now().strftime("%B " "%Y")
     elif message_string.find("whatisthetime") != -1:
         response = datetime.datetime.now().strftime("The time is: %I:%M %p")
+=======
+
+    if message_string.find("whatisthedate") != -1:
+        await message.channel.send(datetime.datetime.now().strftime("%B " "%Y"))
+    elif message_string.find("hi") != -1:
+        await message.channel.send("Hi " + author.name)
+    elif message_string.find("whatisthetime") != -1:
+        await message.channel.send(datetime.datetime.now().strftime("The time is: %I:%M %p"))
+    elif message_string.find("games") != -1:
+        await games.playGame(message)
+>>>>>>> Lauren
     elif message_string.find("join") != -1:
         try:
             response = "Joining VC"
