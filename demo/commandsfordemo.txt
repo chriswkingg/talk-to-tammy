@@ -1,0 +1,22 @@
+$hi
+$hello
+$my name is Rohan
+$good how are you?
+$how were you created?
+$whos your favourite developer? 
+$google MLH
+$wiki summery hackathons
+$wiki tittle ai chatbots 
+$lookup how to decalare a dictionary in python
+$what did you dream last night?
+$dictionary quarantine
+$game
+$weather in los angeles
+$parrot MLH Sean is my favourite
+$tts true
+$translate chinese this event has been really fun
+$can you sing for me
+$tts false
+$what is your biggest fear
+$cya Tammy
+$bye guys
