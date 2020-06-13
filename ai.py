@@ -5,7 +5,7 @@ import nltk.corpus
 
 pairs = [
     [r"who (.*) favorite developer ?",
-        ['Daniel is obviously the best developer', 'Rohan should pursue business instead']
+        ['Rohan is obviously the best developer', 'ANYONE BUT DANIEL!!!! ']
     ],
     [
         r"what (.*) animal ?",
@@ -125,7 +125,7 @@ pairs = [
 ],
     [
         r"who (.*) (moviestar|actor)?",
-        ["Brad Pitt"]
+        ["Brad Pitt","Tom Cruise"]
 ],
     [
         r"bye|cya|(.*) (leave)",
