@@ -151,7 +151,7 @@ pairs = [
     ],
     [
         r"tell (.*) joke",
-        ["Have you heard about the new restauant called Karma? There is no meanu, you get what you deserve.",]
+        ["Have you heard about the new restauant called Karma? There is no menu, you get what you deserve.",]
     ],
     [
         r"(.*) age?",
