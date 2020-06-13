@@ -58,14 +58,14 @@ ul {
 
 .image1 {
     width:20vw;
-    height:20vw;
+    height:15vw;
     margin-left:10vw;
   
 }
 
 .image2 {
     width:20vw;
-    height:20vw;
+    height:15vw;
     margin-left: 35vw;
 
 }
@@ -89,4 +89,35 @@ ul {
   
   }
     
+
+
+
+.dark-mode {
+  background-color: #383838;
+}
  
+.switch {
+  margin-top: 1.5vw;
+  position: relative;
+  width: 2vw;
+  height: 2vw;
+  float: right;
+  margin-right: 63vw;
+}
+
+.switch:hover {
+  position: relative;
+  display: inline-block;
+  width: 2vw;
+  height: 2vw;
+  background-color: #383838;
+}
+
+.text {
+  float: left;
+}
+
+
+
+
+
