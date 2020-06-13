@@ -33,4 +33,4 @@ async def input_handler(message):
             await message.channel.send("Error: Not connected to a voice channel")
     else:
         response = ai.chatBotResponse(message_string)
-        await message.channel.send(response if response else "Tammy doesn't know what you said! \n My devs are too dumb to teach me more things :(")
+        await message.channel.send(response if response else "Tammy doesn't know what you said! \nMy devs are too dumb to teach me more things :(")
