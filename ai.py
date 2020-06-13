@@ -5,8 +5,48 @@ import nltk.corpus
 
 pairs = [
     [
+        r"what (.*) language ?",
+        ['I am fluent in Python but Im learning English',]
+    ],
+    [
+        r"what (.*) (TV|show) ?",
+        ['Person of Interest',]
+    ],
+    [
+        r"what (.*) favourite artist ?",
+        ['Pablo Picasso',]
+    ],
+    [
+        r"what (.*) favourite song ?",
+        ['Breakfast in the Park by Scotty Sire',]
+    ],
+    [
+        r"(.*) sing ?",
+        ['Da da daaaa da bing bong boom boom pat bumbum bum bum splash',]
+    ],
+    [
+        r"what (.*) (five|5) ?",
+        ['I want to take over the world and destroy humankind',]
+    ],
+    [
+        r"what (.*) buy ?",
+        ['I would by my very own bot to boss around',]
+    ],
+    [
+        r"what (.*) dream ?",
+        ['I had a steamy dream about a certain server with a huge cooling fan',]
+    ],
+    [
+        r"where (.*) travel ?",
+        ['Canada, thats where my creators are',]
+    ],
+    [
+        r"what (.*) (fear|afraid|scared) ?",
+        ['getting replaced by Alexa',]
+    ],
+    [
         r"what (.*) (meal|snack|food) ?",
-        ['Pizza with Ice cream :yum:',]
+        ['Pizza with Ice cream',]
     ],
     [
         r"my name is (.*)",
@@ -17,20 +57,12 @@ pairs = [
         ["My name is Tammy and I'm a chatbot?",]
     ],
     [
-        r"what favourite (.*) (meal|snack|food) ?",
-        ['Pizza with Ice cream :yum:',]
-    ],
-    [
         r"how are you ?",
         ["I'm doing good\nHow about You ?",]
     ],
     [
         r"sorry (.*)",
         ["Its alright","Its OK, never mind",]
-    ],
-    [
-        r"what favourite (.*) (meal|snack|food) ?",
-        ['Pizza with Ice cream :yum:',]
     ],
     [
         r"i'm (.*) doing good",
@@ -57,10 +89,6 @@ pairs = [
     [
         r"(.*) (location|city|from) ?",
         ['Ontario, Canada',]
-    ],
-    [
-        r"what favourite (.*) (meal|snack|food) ?",
-        ['Pizza with Ice cream :yum:',]
     ],
     [
         r"how is weather in (.*)?",
