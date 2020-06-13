@@ -15,10 +15,10 @@ async def input_handler(message):
     voicechannel = author.voice.channel
     message_string = message.content.lower().replace('$', '') #Removes the $ when sending to message handler
     response = ""
-    if message_string.find("whatisthedate") != -1:
-        response = datetime.datetime.now().strftime("%B " "%Y")
+    if message_string.find("date") != -1:
+        response = datetime.datetime.now().strftime("The date is: %d/%m/%Y")
 
-    elif message_string.find("whatisthetime") != -1:
+    elif message_string.find("time") != -1:
         response = datetime.datetime.now().strftime("The time is: %I:%M %p")
     
     elif message_string.find("parrot") != -1:
