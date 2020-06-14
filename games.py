@@ -1,6 +1,7 @@
 import message_handler
 import random
 import asyncio
+import restart_app
 
 game_enabled = False
 
@@ -47,6 +48,7 @@ async def game_1(client, message):
                 await message.channel.send("That's it, you guessed it!\n")
                 await message.channel.send("Thanks for playing")
                 game_enabled = False
+                restart_app.restart_program()
                 return
             elif guess == "":
                 print("waiting")
@@ -55,6 +57,7 @@ async def game_1(client, message):
                 guess = "" 
         else:
             print('exiting')
+            
             return
 
     return
