@@ -10,3 +10,4 @@ pip install numpy
 pip install discord
 pip install opuslib
 pip install PyNaCl
+pip install psutil
