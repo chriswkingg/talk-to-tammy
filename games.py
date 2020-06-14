@@ -1,5 +1,6 @@
 import message_handler
 import random
+import asyncio
 
 game_enabled = False
 
@@ -22,6 +23,7 @@ async def game_1(client, message):
     global game_enabled
     WORDS = ("python", "jumble", "easy", "difficult", "answer",  "xylophone" ,"different", "language", "mammal", "dessert", "stomach",  "probably", "neither", "numeral", "million", "message", "except", "laughter", "inventor", "journey", "bake", "must", "fried", "rip", "sea", "chase", "bee", "seven", "counting", "write", "steer", "tenth", "they", "fight", "birthday")
     word = random.choice(WORDS)
+    print(word)
     correct = word
     jumble = ""
     while word:
@@ -32,6 +34,8 @@ async def game_1(client, message):
     await message.channel.send("The jumble is: " + jumble)
     await message.channel.send("Your guess: ")
     guess = ""
+
+    
     @client.event
     async def on_message(message2):
         global game_enabled
@@ -50,6 +54,7 @@ async def game_1(client, message):
                 await message.channel.send("Voops, thats not rrrrrrright")
                 guess = "" 
         else:
-            print("exiting")  
+            print('exiting')
             return
+
     return
