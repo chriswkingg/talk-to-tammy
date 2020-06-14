@@ -2,7 +2,7 @@
 .titlename{
     font-family:Comic Sans MS, Comic Sans;
     text-align:center;
-    font-size: 5vw;
+    font-size: 55px;
     background-color:#f95d9b;
     background-size:100%;
     -webkit-background-clip: text;
@@ -38,7 +38,7 @@ ul {
     float: left;
     padding-left:5vw;
     font-family: Comic Sans MS, Comic Sans;
-    font-size:2vw;
+    font-size:30px;
     font-weight:bold;
   }
   
@@ -94,7 +94,7 @@ ul {
     font-family: Comic Sans MS, Comic Sans;
     background-color:#6699cc;
     color:white;
-    font-size: 1.2vw;
+    font-size: 20px;
     border-color:grey;
     border-style:solid;
   }
@@ -128,7 +128,7 @@ ul {
    #textwithin1{
       font-family: Comic Sans MS, Comic Sans;
       text-align: center;
-      padding-top:1.5vw;
+      padding-top:30px;
 
   }
 
