@@ -4,8 +4,8 @@ import nltk
 import nltk.corpus
 
 pairs = [
-    [r"who (.*) favourite developer ?",
-        ['Rohan is obviously the best developer', 'Daniel might as well be my son ']
+    [r"who (.*) developer ?",
+        ['Rohan is obviously the best developer', 'Daniel duh']
     ],
     [
         r"what (.*) animal ?",
@@ -70,8 +70,8 @@ pairs = [
         ["My name is Tammy and I'm a chatbot?",]
     ],
     [
-        r"how are you ?",
-        ["I'm doing good\nHow about You ?",]
+        r"(.*) how are you ?",
+        ["I'm doing good!",]
     ],
     [
         r"what (.*) Fox say ?",
@@ -106,7 +106,7 @@ pairs = [
         ["Its alright","Its OK, never mind",]
     ],
     [
-        r"i'm (.*) doing good",
+        r"i (.*) doing good",
         ["Nice to hear that","Alright :)", "I'm glad to hear that!", "Thats good!",]
     ],
     [
@@ -165,7 +165,7 @@ pairs = [
     ],
     [
         r"(.*) created ?",
-        ["Chris, Rohan, Daniel, and Lauren created me using Python's NLTK library ","top secret ;)",]
+        ["Chris, Rohan, Daniel, and Lauren created me using Python's NLTK library ",]
     ],
     [
         r"(.*) (location|city|from) ?",
