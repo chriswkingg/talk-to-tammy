@@ -48,7 +48,6 @@ Talk to Tammy can understand and respond to the following questions and response
 44) Tranlate (detination language) message
 45) Bye/Cya/ Im going to leave.
 
-To add Tammy to a voice server: $join
 
 To enable Talk-speech: $tts true
 To disable talk-speech: $tts false 

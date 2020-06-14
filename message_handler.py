@@ -12,7 +12,7 @@ async def input_handler(message):
     global tts_enabled
     author = message.author
     channel = message.channel
-    voicechannel = author.voice.channel
+    #voicechannel = author.voice.channel
     message_string = message.content.lower().replace('$', '') #Removes the $ when sending to message handler
     response = ""
     if message_string.find("date") != -1:
