@@ -3,15 +3,15 @@ $hello
 $my name is Rohan
 $good how are you?
 $how were you created?
-$whos your favourite developer? 
-$google MLH
-$wiki summery hackathons
-$wiki tittle ai chatbots 
-$lookup how to decalare a dictionary in python
+$who is the best developer
+$wiki summary hackathons
+$wiki title chatbots
+$google how to decalare a dictionary in python
 $what did you dream last night?
 $dictionary quarantine
 $game
-$weather in los angeles
+$weather los angeles
+$translate chinese this event has been really fun
 $parrot MLH Sean is my favourite
 $tts true
 $translate chinese this event has been really fun
