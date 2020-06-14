@@ -59,21 +59,21 @@ async def input_handler(message):
     elif message_string.find("what can you do") != -1:
         response = "My commands can be found on my website! "
         
-    elif message_string.find("join") != -1:
-        try:
-            response = "Joining VC"
-            await voicechannel.connect()
-        except discord.errors.ClientException:
-            response = "Error: Already connected to a channel"
+    # elif message_string.find("join") != -1:
+    #     try:
+    #         response = "Joining VC"
+    #         await voicechannel.connect()
+    #     except discord.errors.ClientException:
+    #         response = "Error: Already connected to a channel"
 
-    elif message_string.find("leave") != -1:
-        server=message.guild
-        voice_client = server.voice_client
-        try: 
-            response = "Leaving VC"
-            await voice_client.disconnect(force = True)
-        except AttributeError:
-            response = "Error: Not connected to a voice channel"
+    # elif message_string.find("leave") != -1:
+    #     server=message.guild
+    #     voice_client = server.voice_client
+    #     try: 
+    #         response = "Leaving VC"
+    #         await voice_client.disconnect(force = True)
+    #     except AttributeError:
+    #         response = "Error: Not connected to a voice channel"
 
     elif message_string.find("tts true") != -1:
         tts_enabled = True
