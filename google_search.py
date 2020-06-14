@@ -1,4 +1,4 @@
-def search(q, searchnum = 5):
+def searchGoogle(q, searchnum = 5):
     try: 
         from googlesearch import search 
     except ImportError:  
