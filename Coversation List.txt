@@ -11,7 +11,7 @@ Talk to Tammy can understand and respond to the following questions and response
 7) What do you want?
 8) How were you created?
 9) Where are you from?/ Whats is your location/ city?
-10) Hows the weather in ___?
+10) Weather ___
 11) I work in ___?
 12) Is it raining in ___?
 13) How is your health Tammy?
@@ -32,7 +32,7 @@ Talk to Tammy can understand and respond to the following questions and response
 28) What do you want for a meal/ snack/ food?
 29) Who is your favorite developer?
 30) Google_____
-31) Wiki summery 
+31) Wiki summary 
 32) Wiki tittle 
 33) Lookup ____
 34) Parrot
@@ -45,9 +45,8 @@ Talk to Tammy can understand and respond to the following questions and response
 41) What is the best cellphone?
 42) Do you have a partner?
 43) Do you have any pets?
-44) Ok google
-45) Tranlate (detination language) message
-46) Bye/Cya/ Im going to leave.
+44) Tranlate (detination language) message
+45) Bye/Cya/ Im going to leave.
 
 To add Tammy to a voice server: $join
 
