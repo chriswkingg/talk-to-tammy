@@ -111,8 +111,8 @@ ul {
     border-color:grey;
     border-style:solid;
     border-width: 0.5vw;
-    width: 30vw;
-    margin-left: 32vw;
+    width: 40vw;
+    margin-left: 30vw;
   }
 
   #boxes1:hover{
@@ -121,14 +121,14 @@ ul {
     border-color:grey;
     border-style:solid;
     border-width: 0.5vw;
-    width: 30vw;
-    margin-left: 32vw;
+    width: 40vw;
+    margin-left: 30vw;
   }
  
    #textwithin1{
       font-family: Comic Sans MS, Comic Sans;
       text-align: center;
-      padding-top:1.5vw;
+      padding-top:.5vw;
       font-size: 3vw;
   }
 
