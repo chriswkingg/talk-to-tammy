@@ -4,7 +4,7 @@ Talk to Tammy can understand and respond to the following questions and response
 
 1) My name is____
 2) How are you?
-3) Sorry
+3) Sorry Tammy
 4) I'm doing good
 5) Hi/ Hey/ Hello
 6) What is your age?

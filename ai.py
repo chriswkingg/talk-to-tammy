@@ -188,7 +188,7 @@ pairs = [
         ["I'm a computer program, so I'm always healthy ",]
     ],
     [
-        r"(.*) (sports|game) ?",
+        r"(.*) (sports|game|sport) ?",
         ["I'm a very big fan of Football",]
     ],
     [
