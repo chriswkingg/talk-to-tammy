@@ -1,6 +1,6 @@
 
 .titlename{
-    font-family:Comic Sans MS, Comic Sans, cursive;
+    font-family:Comic Sans MS, Comic Sans;
     text-align:center;
     font-size: 5vw;
     background-color:#f95d9b;
@@ -37,7 +37,7 @@ ul {
   li {
     float: left;
     padding-left:5vw;
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: Comic Sans MS, Comic Sans;
     font-size:2vw;
     font-weight:bold;
   }
@@ -91,7 +91,7 @@ ul {
 /*box*/
 
   #boxes2{
-    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-family: Comic Sans MS, Comic Sans;
     background-color:#6699cc;
     color:white;
     font-size: 1.2vw;
@@ -126,7 +126,7 @@ ul {
   }
  
    #textwithin1{
-      font-family: Comic Sans MS, Comic Sans, cursive;
+      font-family: Comic Sans MS, Comic Sans;
       text-align: center;
       padding-top:1.5vw;
 
@@ -154,7 +154,7 @@ ul {
   width: 2vw;
   height: 2vw;
   float: right;
-  margin-right: 75vw;
+  margin-right: 70vw;
 }
 
 .switch:hover {
