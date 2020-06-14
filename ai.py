@@ -154,7 +154,7 @@ pairs = [
         ["Have you heard about the new restauant called Karma? There is no menu, you get what you deserve.",]
     ],
     [
-        r"(.*) age?",
+        r"(.*) (age|old)?",
         ["I'm a computer program dude\nSeriously you are asking me this?",]
         
     ],
