@@ -31,7 +31,7 @@ async def input_handler(message):
 
     elif message_string.find("google") != -1:
         quer = message_string.split(' ',1)[1]
-        response = google_search.search(quer)
+        response = google_search.searchGoogle(quer)
 
     elif message_string.find("weather") != -1:
         loc = message_string.split(' ',1)[1]

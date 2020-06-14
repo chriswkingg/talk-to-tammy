@@ -11,3 +11,4 @@ pip install discord
 pip install opuslib
 pip install PyNaCl
 pip install psutil
+pip install google
