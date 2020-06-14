@@ -20,6 +20,10 @@ async def init_games(client, message):
             await game_1(client, message)
         elif message2.content.lower() == "2":
             await game_2(client, message)
+        elif message2.content.lower() == "3":
+            await message.channel.send("Ok Quitting....")
+            game_enabled = False
+            restart_app.restart_program()
 
 async def game_1(client, message):
     global game_enabled
@@ -102,7 +106,3 @@ async def game_2(client, message):
 
 
 
-#   elif answer=="3":
-#     await message.channel.send("That's a shame. Thanks for playing!\n") 
-#   elif answer=="":
-#     await message.channel.send("Not Valid Choice Try again")
