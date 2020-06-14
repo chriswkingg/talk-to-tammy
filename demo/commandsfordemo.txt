@@ -8,7 +8,7 @@ $wiki summary hackathons
 $wiki title chatbots
 $google how to decalare a dictionary in python
 $what did you dream last night?
-$dictionary quarantine
+$lookup quarantine
 $game
 $weather los angeles
 $translate chinese this event has been really fun
