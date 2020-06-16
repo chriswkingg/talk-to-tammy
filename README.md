@@ -5,4 +5,7 @@ Tammy can be used for quick searches (weather, google, dictionary etc.)
 
 ## Downloading
 If you would like to download and use the bot yourself. You must create a .env file in the same directory as the bot and inside the file add DISCORD_TOKEN=YOUR_BOT_TOKEN_HERE
-install_packages must be run as admin!
+Note: the install_packages file must be run as admin!
+
+## Final Product
+You can check out the final product on devpost: https://devpost.com/software/talk-to-tammy
